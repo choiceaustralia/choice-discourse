@@ -1,7 +1,7 @@
-# discourse
+# Discourse Integration
 
-For our own Discourse forks or plugins or whatever
+For our own Discourse plugins and custom code.
 
 ## Project Status
 
-See [waffle](https://waffle.io/choiceaustralia/discourse)
+See [waffle](https://waffle.io/choiceaustralia/discourse-integration)
