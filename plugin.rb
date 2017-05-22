@@ -3,3 +3,9 @@
 # version: 0.0.0
 # url: https://github.com/choiceaustralia/discourse-integration
 # authors: Rimian Perkins
+
+load File.expand_path('../lib/discourse_integration/engine.rb', __FILE__)
+
+Discourse::Application.routes.prepend do
+  mount ::DiscourseIntegration::Engine, at: '/'
+end
