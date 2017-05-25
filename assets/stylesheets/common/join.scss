@@ -1,6 +1,43 @@
 
+// Colour Palette
+$green: #44920e;
+$blue: #005c94;
+$silver: #767676;
+
+// Settings
+$border_radius: 5px;
+
+// Implement Styles
 .choice {
+  .fa-check {
+    color: $green;
+  }
+
+  .low {
+    color: $silver;
+  }
+
+  h2 {
+      font-weight: normal;
+      font-family: Lato;
+      line-height: 1.43;
+      letter-spacing: 0.3px;
+      color: #005c94;
+    }
+
+  .btn {
+    width: 180px;
+    -webkit-border-radius: $border_radius;
+    -moz-border-radius: $border_radius;
+    border-radius: $border_radius;
+  }
+
   ul {
     list-style-type: none;
+    li {
+      .fa-check {
+        margin-right: 5px;
+      }
+    }
   }
 }
