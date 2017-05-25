@@ -2,19 +2,52 @@
 // Colour Palette
 $green: #44920e;
 $blue: #005c94;
-$silver: #767676;
+$grey_3: #333;
+$grey_7: #767676;
+$grey_e: #eee;
 
 // Settings
 $border_radius: 5px;
 
 // Implement Styles
 .choice {
+  padding: 3px;
+  background-color: $grey_e;
+
+  .topic-avatar {
+    border: 0;
+  }
+
+  > header {
+    h1 {
+      font-family: Lusitana;
+      margin: 0 auto;
+      display: table;
+      padding: 0 20px;
+      position: relative;
+      top: 16px;
+      background-color: $grey_e;
+      color: $grey_3;
+      z-index: 99;
+    }
+    hr {
+      border: 0;
+      background-color: $grey_3;
+      position: relative;
+      top: -9px;
+    }
+  }
+
+  .background {
+    background-color: white;
+  }
+
   .fa-check {
     color: $green;
   }
 
   .low {
-    color: $silver;
+    color: $grey_7;
   }
 
   h2 {
@@ -30,6 +63,10 @@ $border_radius: 5px;
     -webkit-border-radius: $border_radius;
     -moz-border-radius: $border_radius;
     border-radius: $border_radius;
+  }
+
+  .btn-join {
+    margin: 10px 0 0 24px;
   }
 
   ul {
