@@ -31,6 +31,7 @@ $border_radius: 5px;
   > header {
     h1 {
       font-family: Lusitana;
+      font-size: 19px;
       margin: 0 auto;
       display: table;
       padding: 0 20px;
@@ -55,6 +56,9 @@ $border_radius: 5px;
   .low {
     color: $grey_7;
   }
+  .larger {
+    font-size: 200%;
+  }
 
   h2 {
       font-weight: normal;
@@ -73,7 +77,7 @@ $border_radius: 5px;
   }
 
   .btn-join {
-    margin: 10px 0 0 24px;
+    margin: 0 0 0 24px;
   }
 
   ul {
