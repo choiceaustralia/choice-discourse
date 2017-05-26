@@ -7,10 +7,15 @@ $grey_7: #767676;
 $grey_e: #eee;
 
 // Settings
+$background_color: $grey_e;
 $border_radius: 5px;
 $border_size: 3px;
 $margin_left: 12px;
-$background_color: $grey_e;
+$width_avatar_col: 80px;
+$icon_url: url('https://choice.community/uploads/default/optimized/2X/4/4c3056a16dcbee5ed6dba59f624c191a0dca3626_1_690x277.png');
+$icon_width: 60px;
+$icon_height: 70px;
+$icon_size: 220px;
 
 // Implement Styles
 .choice {
@@ -26,7 +31,7 @@ $background_color: $grey_e;
       padding: 0 20px;
       position: relative;
       top: 16px;
-      background-color: $grey_e;
+      background-color: $background_color;
       color: $grey_3;
       z-index: 99;
     }
@@ -45,7 +50,14 @@ $background_color: $grey_e;
     }
     > .row {
       border-bottom: $border_size $background_color solid;
-      > .topic-avatar {
+      .icon {
+        background-size: $icon_size;
+//        background-image: $icon_url;
+        width: $icon_width;
+        height: $icon_height;
+      }
+      .topic-avatar {
+        width: $width_avatar_col;
         text-align: center;
       }
     }
