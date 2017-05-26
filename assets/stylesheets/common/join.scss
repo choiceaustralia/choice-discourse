@@ -8,25 +8,14 @@ $grey_e: #eee;
 
 // Settings
 $border_radius: 5px;
+$border_size: 3px;
+$margin_left: 12px;
+$background_color: $grey_e;
 
 // Implement Styles
 .choice {
-  padding: 3px;
-  background-color: $grey_e;
-
-  .topic-avatar {
-    border: 0;
-  }
-
-  .background {
-    background-color: white;
-    > .row {
-      margin: 10px;
-      > .topic-avatar {
-        text-align: center;
-      }
-    }
-  }
+  padding: $border_size;
+  background-color: $background_color;
 
   > header {
     h1 {
@@ -49,6 +38,20 @@ $border_radius: 5px;
     }
   }
 
+  .background {
+    background-color: white;
+    .topic-avatar, .topic-body {
+      border: 0;
+    }
+    > .row {
+      border-bottom: $border_size $background_color solid;
+      > .topic-avatar {
+        text-align: center;
+      }
+    }
+  }
+
+
   .fa-check {
     color: $green;
   }
@@ -66,7 +69,7 @@ $border_radius: 5px;
       line-height: 1.43;
       letter-spacing: 0.3px;
       color: #005c94;
-      margin-left: 10px;
+      margin-left: $margin_left;
     }
 
   .btn {
@@ -77,12 +80,19 @@ $border_radius: 5px;
   }
 
   .btn-join {
-    margin: 0 0 0 24px;
+    margin-left: 23px;
+  }
+
+  hr {
+    border: 0;
+    border-top: 3px !important;
+    background-color: red;
   }
 
   ul {
     list-style-type: none;
     li {
+      margin-bottom: 12px;
       .fa-check {
         margin-right: 5px;
       }
