@@ -1,7 +1,13 @@
 
+@mixin draw_circle($radius) {
+  width: $radius*2; height: $radius*2; -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius;
+}
+
 // Colour Palette
 $green: #44920e;
-$blue: #005c94;
+$blue_dark: #005c94;
+$blue_light: #2e90e9;
+$orange: #ffb100;
 $grey_3: #333;
 $grey_7: #767676;
 $grey_e: #eee;
@@ -12,15 +18,32 @@ $border_radius: 5px;
 $border_size: 3px;
 $margin_left: 12px;
 $width_avatar_col: 80px;
-$icon_url: url('https://choice.community/uploads/default/optimized/2X/4/4c3056a16dcbee5ed6dba59f624c191a0dca3626_1_690x277.png');
-$icon_width: 60px;
-$icon_height: 70px;
-$icon_size: 220px;
+$icon_radius: 27px;
+$icon_member_color: $blue_light;
+$icon_defender_color: $orange;
 
 // Implement Styles
 .choice {
   padding: $border_size;
   background-color: $background_color;
+
+  .icon_member {
+    @include draw_circle($icon_radius);
+    background-color: $icon_member_color;
+  }
+  .icon_defender {
+    @include draw_circle($icon_radius);
+    background-color: $icon_defender_color;
+  }
+
+  .fa-check {
+    color: $green;
+  }
+
+  .fa-plus {
+    color: $blue_dark;
+    font-size: 150%;
+  }
 
   > header {
     h1 {
@@ -50,22 +73,35 @@ $icon_size: 220px;
     }
     > .row {
       border-bottom: $border_size $background_color solid;
-      .icon {
-        background-size: $icon_size;
-//        background-image: $icon_url;
-        width: $icon_width;
-        height: $icon_height;
-      }
       .topic-avatar {
         width: $width_avatar_col;
         text-align: center;
+        .content {
+          .icon {
+            padding-left: 20px;
+            margin: 0 auto;
+            width: $icon_radius;
+          }
+          .icons {
+            margin: 0 auto;
+            width: $icon_radius + 20px;
+            .fa-plus {
+              position: relative;
+              top: -45px;
+              left: 40px;
+            }
+            .icon_defender {
+              position: relative;
+            }
+            .icon_member {
+              position: relative;
+              top: -47px;
+              left: 27px;
+            }
+          }
+        }
       }
     }
-  }
-
-
-  .fa-check {
-    color: $green;
   }
 
   .low {
