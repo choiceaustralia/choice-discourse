@@ -16,7 +16,7 @@ $grey_e: #eee;
 $background_color: $grey_e;
 $border_radius: 5px;
 $border_size: 5px;
-$margin_left: 12px;
+$margin_left: 18px;
 $width_avatar_col: 89px;
 $icon_size: 58px;
 $icon_member_color: $blue_light;
@@ -139,10 +139,7 @@ $icon_defender_color: $orange;
       -webkit-border-radius: $border_radius;
       -moz-border-radius: $border_radius;
       border-radius: $border_radius;
-    }
-
-    .btn-join {
-      margin-left: 23px;
+      background-color: $blue_dark;
     }
 
     hr {
@@ -153,6 +150,7 @@ $icon_defender_color: $orange;
 
     ul {
       list-style-type: none;
+      margin-left: 25px;
       li {
         margin-bottom: 12px;
         .fa-check {
