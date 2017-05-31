@@ -15,17 +15,19 @@ $grey_e: #eee;
 // Settings
 $background_color: $grey_e;
 $border_radius: 5px;
-$border_size: 3px;
+$border_size: 5px;
 $margin_left: 12px;
-$width_avatar_col: 80px;
+$width_avatar_col: 89px;
 $icon_size: 58px;
 $icon_member_color: $blue_light;
 $icon_defender_color: $orange;
 
 // Implement Styles
 .choice {
+  width: 375px;
   padding: $border_size;
   background-color: $background_color;
+  font-size: 15px;
 
   .icon_member {
     background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
@@ -48,7 +50,7 @@ $icon_defender_color: $orange;
   > header {
     h1 {
       font-family: Lusitana;
-      font-size: 19px;
+      font-size: 20px;
       margin: 0 auto;
       display: table;
       padding: 0 20px;
@@ -73,6 +75,9 @@ $icon_defender_color: $orange;
     }
     > .row {
       border-bottom: $border_size $background_color solid;
+      .topic-body {
+        width: 250px;
+      }
       .topic-avatar {
         width: $width_avatar_col;
         text-align: center;
@@ -112,47 +117,47 @@ $icon_defender_color: $orange;
         }
       }
     }
-  }
-
-  .low {
-    color: $grey_7;
-  }
-  .larger {
-    font-size: 200%;
-  }
-
-  h2 {
-      font-weight: normal;
-      font-family: Lato;
-      line-height: 1.43;
-      letter-spacing: 0.3px;
-      color: #005c94;
-      margin-left: $margin_left;
+    .low {
+      color: $grey_7;
+    }
+    .larger {
+      font-size: 200%;
     }
 
-  .btn {
-    width: 180px;
-    -webkit-border-radius: $border_radius;
-    -moz-border-radius: $border_radius;
-    border-radius: $border_radius;
-  }
+    h2 {
+        font-weight: normal;
+        font-family: Lato;
+        font-size: 21px;
+        line-height: 1.43;
+        letter-spacing: 0.3px;
+        color: #005c94;
+        margin-left: $margin_left;
+      }
 
-  .btn-join {
-    margin-left: 23px;
-  }
+    .btn {
+      width: 180px;
+      -webkit-border-radius: $border_radius;
+      -moz-border-radius: $border_radius;
+      border-radius: $border_radius;
+    }
 
-  hr {
-    border: 0;
-    border-top: 3px !important;
-    background-color: red;
-  }
+    .btn-join {
+      margin-left: 23px;
+    }
 
-  ul {
-    list-style-type: none;
-    li {
-      margin-bottom: 12px;
-      .fa-check {
-        margin-right: 5px;
+    hr {
+      border: 0;
+      border-top: 3px !important;
+      background-color: red;
+    }
+
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 12px;
+        .fa-check {
+          margin-right: 5px;
+        }
       }
     }
   }
