@@ -13,18 +13,20 @@ $grey_7: #767676;
 $grey_e: #eee;
 
 // Settings
+$width_container_col: 375px;
+$width_avatar_col: 110px;
+$width_content_col: 250px;
 $background_color: $grey_e;
 $border_radius: 5px;
 $border_size: 5px;
 $margin_left: 18px;
-$width_avatar_col: 89px;
 $icon_size: 58px;
 $icon_member_color: $blue_light;
 $icon_defender_color: $orange;
 
 // Implement Styles
 .choice {
-  width: 375px;
+  width: $width_container_col;
   padding: $border_size;
   background-color: $background_color;
   font-size: 15px;
@@ -76,29 +78,30 @@ $icon_defender_color: $orange;
     > .row {
       border-bottom: $border_size $background_color solid;
       .topic-body {
-        width: 250px;
+        width: $width_content_col;
       }
       .topic-avatar {
         width: $width_avatar_col;
         text-align: center;
         .content {
           .icon {
-            margin: 0 auto;
             .icon_member {
               width: 58px;
               height: 58px;
+              margin: 0 auto;
             }
             .icon_defender {
               width: 60px;
               height: 70px;
+              margin: 0 auto;
             }
           }
           .icons {
-            margin: 0 auto;
+            padding-left: $margin_left;
             .fa-plus {
               position: relative;
-              top: -61px;
-              left: 33px;
+              top: -63px;
+              left: 18px;
             }
             .icon_defender {
               z-index: 99;
@@ -150,7 +153,7 @@ $icon_defender_color: $orange;
 
     ul {
       list-style-type: none;
-      margin-left: 25px;
+      margin-left: 15px;
       li {
         margin-bottom: 12px;
         .fa-check {
