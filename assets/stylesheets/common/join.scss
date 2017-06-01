@@ -23,6 +23,7 @@ $margin_left: 18px;
 $icon_size: 58px;
 $icon_member_color: $blue_light;
 $icon_defender_color: $orange;
+$bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png');
 
 // Implement Styles
 .choice {
@@ -30,6 +31,7 @@ $icon_defender_color: $orange;
   width: $width_container_col;
   padding: $border_size;
   background-color: $background_color;
+  background-image: $bg_url;
 
   .icon_member {
     background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
@@ -59,6 +61,7 @@ $icon_defender_color: $orange;
       position: relative;
       top: 16px;
       background-color: $background_color;
+      background-image: $bg_url;
       color: $grey_3;
       z-index: 99;
     }
