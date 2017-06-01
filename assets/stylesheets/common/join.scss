@@ -18,7 +18,7 @@ $width_avatar_col: 110px;
 $width_content_col: 250px;
 $background_color: $grey_e;
 $border_radius: 5px;
-$border_size: 5px;
+$border_size: 7px;
 $margin_left: 18px;
 $icon_size: 58px;
 $icon_member_color: $blue_light;
@@ -29,7 +29,6 @@ $icon_defender_color: $orange;
   width: $width_container_col;
   padding: $border_size;
   background-color: $background_color;
-  font-size: 15px;
 
   .icon_member {
     background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
@@ -55,7 +54,7 @@ $icon_defender_color: $orange;
       font-size: 20px;
       margin: 0 auto;
       display: table;
-      padding: 0 20px;
+      padding: 10px 20px;
       position: relative;
       top: 16px;
       background-color: $background_color;
@@ -66,7 +65,7 @@ $icon_defender_color: $orange;
       border: 0;
       background-color: $grey_3;
       position: relative;
-      top: -9px;
+      top: -17px;
     }
   }
 
@@ -75,8 +74,23 @@ $icon_defender_color: $orange;
     .topic-avatar, .topic-body {
       border: 0;
     }
+    h2 {
+      font-weight: normal;
+      font-family: Lato;
+      font-size: 21px;
+      line-height: 1.43;
+      letter-spacing: 0.6px;
+      color: #005c94;
+      margin-left: $margin_left;
+    }
     > .row {
-      border-bottom: $border_size $background_color solid;
+      padding-top: $margin_left;
+      padding-bottom: 6px;
+      border-bottom: $border_size/2 $background_color solid;
+      font-family: Lato;
+      font-size: 15px;
+      line-height: 1.47;
+      color: #000000;
       .topic-body {
         width: $width_content_col;
       }
@@ -122,23 +136,20 @@ $icon_defender_color: $orange;
     }
     .low {
       color: $grey_7;
+      font-family: Lato;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 0.4px;
+      color: #767676;
     }
     .larger {
-      font-size: 200%;
+      font-size: 165%;
     }
-
-    h2 {
-        font-weight: normal;
-        font-family: Lato;
-        font-size: 21px;
-        line-height: 1.43;
-        letter-spacing: 0.3px;
-        color: #005c94;
-        margin-left: $margin_left;
-      }
 
     .btn {
       width: 180px;
+      padding: 10px;
       -webkit-border-radius: $border_radius;
       -moz-border-radius: $border_radius;
       border-radius: $border_radius;
