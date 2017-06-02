@@ -1,0 +1,145 @@
+
+// Settings
+$width_container_col: 375px;
+$width_avatar_col: 110px;
+$width_content_col: 220px;
+$background_color: $grey_e;
+$border_radius: 5px;
+$border_size: 7px;
+$margin_left: 18px;
+$icon_size: 58px;
+$bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png');
+
+// Implement Styles
+.choice {
+  margin: 0 auto;
+  width: $width_container_col;
+  padding: $border_size;
+  background-color: $background_color;
+  background-image: $bg_url;
+
+  > header {
+    h1 {
+      font-size: 20px;
+      margin: 0 auto;
+      display: table;
+      padding: 10px 20px;
+      position: relative;
+      top: 16px;
+      background-color: $background_color;
+      background-image: $bg_url;
+      color: $grey_3;
+      z-index: 99;
+    }
+    hr {
+      border: 0;
+      background-color: $grey_3;
+      position: relative;
+      top: -17px;
+    }
+  }
+
+  .background {
+    background-color: white;
+    .topic-avatar, .topic-body {
+      border: 0;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 1.43;
+      letter-spacing: 0.6px;
+      color: #005c94;
+      margin-left: $margin_left;
+    }
+    > .row {
+      padding-top: $margin_left;
+      padding-bottom: 6px;
+      border-bottom: $border_size/2 $background_color solid;
+      font-family: Lato;
+      font-size: 15px;
+      line-height: 1.47;
+      color: #000000;
+      .topic-body {
+        width: $width_content_col;
+      }
+      .topic-avatar {
+        width: $width_avatar_col;
+        text-align: center;
+        .content {
+          .icon {
+            .icon_member {
+              width: 58px;
+              height: 58px;
+              margin: 0 auto;
+            }
+            .icon_defender {
+              width: 60px;
+              height: 70px;
+              margin: 0 auto;
+            }
+          }
+          .icons {
+            padding-left: $margin_left;
+            .fa-plus {
+              position: relative;
+              top: -63px;
+              left: 18px;
+            }
+            .icon_defender {
+              z-index: 99;
+              position: relative;
+              width: 60px;
+              height: 70px;
+            }
+            .icon_member {
+              position: relative;
+              left: 42px;
+              top: -61px;
+              width: 47px;
+              height: 47px;
+            }
+          }
+        }
+      }
+    }
+    .low {
+      color: $grey_7;
+      font-family: Lato;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 0.4px;
+      color: #767676;
+    }
+    .larger {
+      font-size: 165%;
+    }
+
+    .btn {
+      width: 180px;
+      padding: 10px;
+      -webkit-border-radius: $border_radius;
+      -moz-border-radius: $border_radius;
+      border-radius: $border_radius;
+      background-color: $blue_dark;
+    }
+
+    hr {
+      border: 0;
+      border-top: 3px !important;
+      background-color: red;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 15px;
+      li {
+        margin-bottom: 12px;
+        .fa-check {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
