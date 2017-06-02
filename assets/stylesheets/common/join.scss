@@ -25,11 +25,13 @@ $width_avatar_col: 110px;
     border: 0;
   }
 
-  .topic-body {
-    width: calc(100% - $width_avatar_col);
-  }
   .topic-avatar {
     width: $width_avatar_col;
+  }
+
+  .topic-body {
+    width: calc(100% - $width_avatar_col);
+    display: table-cell;
   }
 
   .icon_member {
