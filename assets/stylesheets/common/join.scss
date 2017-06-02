@@ -1,7 +1,5 @@
 
-@mixin draw_circle($radius) {
-  width: $radius*2; height: $radius*2; -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 // Colour Palette
 $green: #44920e;
