@@ -10,9 +10,8 @@ $grey_3: #333;
 $grey_7: #767676;
 $grey_e: #eee;
 
-// Common settings
-$icon_member_color: $blue_light;
-$icon_defender_color: $orange;
+// Settings
+$width_avatar_col: 110px;
 
 // Common CSS
 .choice {
@@ -20,6 +19,17 @@ $icon_defender_color: $orange;
 
   h1 {
     font-family: Lusitana;
+  }
+
+  .topic-avatar, .topic-body {
+    border: 0;
+  }
+
+  .topic-body {
+    width: calc(100% - $width_avatar_col);
+  }
+  .topic-avatar {
+    width: $width_avatar_col;
   }
 
   .icon_member {
