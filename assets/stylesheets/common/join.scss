@@ -25,15 +25,6 @@ $width_avatar_col: 120px;
     border: 0;
   }
 
-  .topic-avatar {
-    width: $width_avatar_col;
-  }
-
-  .topic-body {
-    width: calc(100% - #{$width_avatar_col});
-    display: table-cell;
-  }
-
   .icon_member {
     background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
     background-size: 100%;
