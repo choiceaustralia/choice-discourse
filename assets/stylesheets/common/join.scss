@@ -30,7 +30,7 @@ $width_avatar_col: 120px;
   }
 
   .topic-body {
-    width: calc(100% - $width_avatar_col);
+    width: calc(100% - #{$width_avatar_col});
     display: table-cell;
   }
 
