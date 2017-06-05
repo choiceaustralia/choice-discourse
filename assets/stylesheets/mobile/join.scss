@@ -45,8 +45,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
       margin-left: $margin_left;
     }
     > .row {
-      padding-top: $margin_left;
-      padding-bottom: 6px;
+      padding: $margin_left 0;
       border-bottom: $border_size/2 $background_color solid;
       font-size: 15px;
       line-height: 1.47;
