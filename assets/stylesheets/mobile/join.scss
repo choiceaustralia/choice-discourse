@@ -7,6 +7,27 @@ $margin_left: 18px;
 $icon_size: 58px;
 $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png');
 
+@media only screen and (min-width: 375px) {
+    .choice {
+      .btn { width: 180px; }
+      .topic-avatar { width: 120px; }
+      .topic-body {
+        width: calc(100% - 120px);
+        display: table-cell;
+      }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .choice {
+      .topic-avatar { width: 90px; }
+      .topic-body {
+        width: calc(100% - 90px);
+        display: table-cell;
+      }
+    }
+}
+
 // Implement Styles
 .choice {
   padding: $border_size;
@@ -105,7 +126,6 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     }
 
     .btn {
-      width: 180px;
       padding: 10px;
       -webkit-border-radius: $border_radius;
       -moz-border-radius: $border_radius;
