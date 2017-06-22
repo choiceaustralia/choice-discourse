@@ -41,14 +41,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     background-size: 100%;
   }
 
-  .fa-check {
-    color: $green;
-  }
 
-  .fa-plus {
-    color: $blue_dark;
-    font-size: 150%;
-  }
 
   .option-header{
     color: #44920e;
@@ -63,6 +56,18 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
   display: block;
   text-align: center;
 
+  h1 {
+    font-family: Lusitana;
+  }
+
+  .fa-check {
+    color: $green;
+  }
+
+  .fa-plus {
+    color: $blue_dark;
+    font-size: 150%;
+  }
 
   .wrapper{
     display: inline-block;
@@ -77,7 +82,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     border-bottom: 3.5px #eee solid;
     font-size: 15px;
     line-height: 1.47;
-    width: 345px;
+    width: 360px;
     float: left;
     background: #fff;
     margin: 2px;
@@ -96,14 +101,26 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     }
 
     > .section{
+      overflow: hidden;
+      padding-bottom: 1px;
       .side{
         width:110px;
         display: inline-block;
+        float: left;
       }
       .main{
         width: calc(100% - 110px);
         display: inline-block;
+        float: left;
       }
+    }
+
+    .btn{
+      padding: 10px;
+      -webkit-border-radius: $border_radius;
+      -moz-border-radius: $border_radius;
+      border-radius: $border_radius;
+      background-color: $blue_dark;
     }
   }
 
