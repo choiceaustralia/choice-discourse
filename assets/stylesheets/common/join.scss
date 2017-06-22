@@ -58,7 +58,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     font-size: 15px;
     line-height: 1.47;
     background: #fff;
-    height: 320px;
+    height: 285px;
     display: block;
     width: 98%;
     margin: 5px auto;
@@ -118,7 +118,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
           letter-spacing: 0.8px;
           text-align: left;
           color: #767676;
-          display: block;
+          display: inline-block;
         }
       }
     }
@@ -155,5 +155,14 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     width: 60px;
     height: 70px;
     margin: 0 auto;
+  }
+
+  .feature-list{
+    li:before{
+      color: $green;
+      content: "\f00c";
+      font: normal normal normal 14px/1 FontAwesome;
+      margin: 0 1em;
+    }
   }
 }
