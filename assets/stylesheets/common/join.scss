@@ -24,7 +24,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
 
 
 .join-container{
-  font-family: 'Lato', sans-serif;
+  font-family: Lato;
   padding:3px;
   background-color: $background_color;
   background-image: $bg_url;
@@ -32,7 +32,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
   text-align: center;
 
   h1 {
-    font-family: 'Lusitana', sans-serif;
+    font-family: Lusitana;
   }
 
   .fa-check {
@@ -112,7 +112,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
         }
 
         .caption{
-          font-family: 'Lato', sans-serif;
+          font-family: Lato;
           font-size: 12px;
           font-weight: 300;
           font-style: italic;
@@ -163,11 +163,11 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
 
   ul.feature-list{
     list-style: none;
-    > li:{
+    li{
       margin-left: -1em;
-      padding: 5px 0;
+      padding: 5px 0px;
     }
-    > li:before{
+    li:before{
       color: $green;
       content: "\f00c";
       font: normal normal normal 14px/1 FontAwesome;
