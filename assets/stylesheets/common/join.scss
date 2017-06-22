@@ -47,3 +47,32 @@ $width_avatar_col: 120px;
     color: #44920e;
   }
 }
+
+.join-container{
+  padding: $border_size;
+  background-color: $background_color;
+  background-image: $bg_url;
+  display: block;
+  text-align: center;
+
+  .wrapper{
+    display: inline-block;
+    text-align: left;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .membership-option{
+    text-align: left;
+    padding: 18px 0;
+    border-bottom: 3.5px #eee solid;
+    font-size: 15px;
+    line-height: 1.47;
+    width: 345px;
+    float: left;
+    background: #fff;
+    margin: 2px;
+    height: 320px;
+    display: inline-block;
+  }
+}
