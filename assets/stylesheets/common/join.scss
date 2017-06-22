@@ -21,32 +21,7 @@ $icon_size: 58px;
 $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png');
 
 // Common CSS
-.choice {
-  font-family: Lato;
 
-  h1 {
-    font-family: Lusitana;
-  }
-
-  .topic-avatar, .topic-body {
-    border: 0;
-  }
-
-  .icon_member {
-    background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
-    background-size: 100%;
-  }
-  .icon_defender {
-    background-image: url('https://choice.community/uploads/default/optimized/2X/2/20c52d6547caac157076ef7735863d0008576cae_1_428x500.png');
-    background-size: 100%;
-  }
-
-
-
-  .option-header{
-    color: #44920e;
-  }
-}
 
 .join-container{
   font-family: Lato;
@@ -86,7 +61,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     height: 320px;
     display: block;
     width: 98%;
-    margin: 2px auto;
+    margin: 5px auto;
     display: block;
   }
 
@@ -94,7 +69,7 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     .membership-option{
       width: 360px;
       float: left;
-      margin: 2px 5px;
+      margin: 5px 5px;
       display: block;
     }
   }
