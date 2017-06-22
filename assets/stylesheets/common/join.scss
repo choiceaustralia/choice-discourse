@@ -52,13 +52,15 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     margin-right: auto;
   }
   .membership-option{
+    position: relative;
     text-align: left;
     padding: 18px 0;
     border: 1px #eee solid;
     font-size: 15px;
     line-height: 1.47;
     background: #fff;
-    height: 285px;
+    height: 215px;
+    padding-bottom: 75px;
     display: block;
     width: 98%;
     margin: 5px auto;
@@ -127,6 +129,9 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
       height: 165px;
     }
     > .option-footer{
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
       .main{
         text-align: center;
       }
@@ -157,7 +162,12 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     margin: 0 auto;
   }
 
-  .feature-list{
+  ul.feature-list{
+    list-style: none;
+    li:{
+      margin-left: -1em;
+      padding: 5px 0px;
+    }
     li:before{
       color: $green;
       content: "\f00c";
