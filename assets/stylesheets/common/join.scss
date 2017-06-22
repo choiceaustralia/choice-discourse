@@ -56,11 +56,13 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
 }
 
 .join-container{
-  padding: $border_size;
+  font-family: Lato;
+  padding:3px;
   background-color: $background_color;
   background-image: $bg_url;
   display: block;
   text-align: center;
+
 
   .wrapper{
     display: inline-block;
@@ -81,5 +83,42 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     margin: 2px;
     height: 320px;
     display: inline-block;
+  }
+
+  .membership-option{
+    > h2 {
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 1.43;
+      letter-spacing: 0.6px;
+      color: #005c94;
+      margin-left: 18px;
+    }
+
+    > .section{
+      .side{
+        width:110px;
+        display: inline-block;
+      }
+      .main{
+        width: calc(100% - 110px);
+        display: inline-block;
+      }
+    }
+  }
+
+  .icon_member {
+    background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
+    background-size: 100%;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+  }
+  .icon_defender {
+    background-image: url('https://choice.community/uploads/default/optimized/2X/2/20c52d6547caac157076ef7735863d0008576cae_1_428x500.png');
+    background-size: 100%;
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
   }
 }
