@@ -82,12 +82,25 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
     border-bottom: 3.5px #eee solid;
     font-size: 15px;
     line-height: 1.47;
-    width: 360px;
-    float: left;
     background: #fff;
-    margin: 2px;
     height: 320px;
-    display: inline-block;
+    display: block;
+  }
+
+  @media screen and (min-width: 375px) {
+    .membership-option{
+      width: 98%;
+      margin: 2px auto;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .membership-option{
+      width: 360px;
+      float: left;
+      margin: 2px 5px;
+      display: block;
+    }
   }
 
   .membership-option{
@@ -98,20 +111,41 @@ $bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c620624
       letter-spacing: 0.6px;
       color: #005c94;
       margin-left: 18px;
+      margin-bottom: 20px;
     }
 
     > .section{
       overflow: hidden;
       padding-bottom: 1px;
       .side{
-        width:110px;
-        display: inline-block;
+        width:28%;
+        min-height: 10px;
+        display: block;
         float: left;
+        text-align: center;
+        > span{
+          font-size: 12px;
+        }
       }
       .main{
-        width: calc(100% - 110px);
-        display: inline-block;
+        width: 72%;
+        display: block;
         float: left;
+
+        > *{
+          margin-right:10px ;
+        }
+
+        .caption{
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: italic;
+          letter-spacing: 0.8px;
+          text-align: left;
+          color: #767676;
+          display: block;
+        }
       }
     }
 
