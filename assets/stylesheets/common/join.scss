@@ -12,26 +12,42 @@ $grey_e: #eee;
 
 // Settings
 $width_avatar_col: 120px;
+// Settings
+$background_color: $grey_e;
+$border_radius: 5px;
+$border_size: 7px;
+$margin_left: 18px;
+$icon_size: 58px;
+$bg_url: url('https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png');
 
 // Common CSS
-.choice {
+
+
+.join-container{
   font-family: Lato;
+  padding:15px 3px;
+  background-color: $background_color;
+  background-image: $bg_url;
+  display: block;
+  text-align: center;
+
+  &:before {
+
+    background-color: #eee;
+    background-image: url(https://choice.community/uploads/default/original/2X/d/d9d0c6206249a0d56c311495ff689197c2c3aca7.png);
+    display: block;
+    content: " ";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -110;
+  }
+
 
   h1 {
     font-family: Lusitana;
-  }
-
-  .topic-avatar, .topic-body {
-    border: 0;
-  }
-
-  .icon_member {
-    background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
-    background-size: 100%;
-  }
-  .icon_defender {
-    background-image: url('https://choice.community/uploads/default/optimized/2X/2/20c52d6547caac157076ef7735863d0008576cae_1_428x500.png');
-    background-size: 100%;
   }
 
   .fa-check {
@@ -41,5 +57,136 @@ $width_avatar_col: 120px;
   .fa-plus {
     color: $blue_dark;
     font-size: 150%;
+  }
+
+  .wrapper{
+    display: inline-block;
+    text-align: left;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .membership-option{
+    position: relative;
+    text-align: left;
+    padding: 18px 0;
+    border: 1px #eee solid;
+    font-size: 15px;
+    line-height: 1.47;
+    background: #fff;
+    height: 215px;
+    padding-bottom: 75px;
+    width: 98%;
+    margin: 5px auto;
+    display: block;
+  }
+
+  @media screen and (min-width: 385px) {
+    .membership-option{
+      width: 360px;
+      float: left;
+      margin: 5px 5px;
+      display: block;
+    }
+  }
+
+  .membership-option{
+    > h2 {
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 1.43;
+      letter-spacing: 0.6px;
+      color: #005c94;
+      margin-left: 18px;
+      margin-bottom: 20px;
+    }
+
+    > .section{
+      overflow: hidden;
+      padding-bottom: 10px;
+      .side{
+        width:28%;
+        min-height: 10px;
+        display: block;
+        float: left;
+        text-align: center;
+        > span{
+          font-size: 12px;
+          padding-left: 20px;
+          padding-right: 20px;
+          display: inline-block;
+        }
+      }
+      .main{
+        width: 72%;
+        display: block;
+        float: left;
+
+        > *{
+          margin-right:10px ;
+        }
+
+        .caption{
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 300;
+          font-style: italic;
+          letter-spacing: 0.8px;
+          text-align: left;
+          color: #767676;
+          display: inline-block;
+        }
+      }
+    }
+
+    > .option-body{
+      font-size: 14px;
+    }
+    > .option-footer{
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      .main{
+        text-align: center;
+      }
+    }
+
+    .btn{
+      padding: 10px;
+      width: 180px;
+      -webkit-border-radius: $border_radius;
+      -moz-border-radius: $border_radius;
+      border-radius: $border_radius;
+      background-color: $blue_dark;
+    }
+  }
+
+  .icon_member {
+    background-image: url('https://choice.community/uploads/default/original/2X/f/f99a4e14687ad8f0fa40903a55e58d256a08edb5.png');
+    background-size: 100%;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+  }
+  .icon_defender {
+    background-image: url('https://choice.community/uploads/default/optimized/2X/2/20c52d6547caac157076ef7735863d0008576cae_1_428x500.png');
+    background-size: 100%;
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  ul.feature-list{
+    list-style: none;
+    li{
+      padding: 5px 0px;
+    }
+    li:before{
+      color: $green;
+      content: "\f00c";
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-left: -1.5em;
+      margin-right: 0.5em;
+    }
   }
 }
